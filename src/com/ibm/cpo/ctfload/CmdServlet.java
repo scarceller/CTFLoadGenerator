@@ -1,3 +1,10 @@
+/**
+* <h1>CTF Load Generator</h1>
+*
+* @author  Sal Carceller
+* @version 1.1
+* @since   10-25-2015 
+*/
 package com.ibm.cpo.ctfload;
 
 import java.io.IOException;
@@ -41,7 +48,7 @@ public class CmdServlet extends HttpServlet
     public CmdServlet() 
     {
     	super();
-		//CPOLogger.setDebugIndicator(true);
+	//CPOLogger.setDebugIndicator(true);
     }
 
 	/**
