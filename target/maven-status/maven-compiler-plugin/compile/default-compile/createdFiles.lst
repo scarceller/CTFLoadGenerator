@@ -1,0 +1,8 @@
+com\ibm\cpo\ctfload\engine\CTFLoadEngine.class
+com\ibm\cpo\ctfload\engine\ClientThread.class
+com\ibm\cpo\utils\CPOLogger.class
+com\ibm\cpo\ctfload\workload\FriendlyURLRequest.class
+com\ibm\cpo\utils\CPORandomNumber.class
+com\ibm\cpo\ctfload\CmdServlet.class
+com\ibm\cpo\ctfload\engine\EngineRunTimer.class
+com\ibm\cpo\ctfload\workload\ClientWorkload.class
