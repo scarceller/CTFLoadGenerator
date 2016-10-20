@@ -9,5 +9,5 @@ Simple HTTP Load Generator, built as a basic .war and installs into any basic se
 See <b>./docs/CTFLoadGeneratorWebDesign_V01.pdf</b> for high level architecture overview.
 
 ## Building with Maven
-- Pull the code from git
-<br>Then just run 'mvn package'and the pom.xml will handle the build.
+- Pull or clone the code from git
+- Then just run <b>'mvn package'</b> and the pom.xml will handle the build.
