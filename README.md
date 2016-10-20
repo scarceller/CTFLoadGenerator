@@ -6,4 +6,4 @@ Simple HTTP Load Generator, built as a basic .war and installs into any basic se
 <p>The pre-built war file can be found in the <b>./WAR/ctfloadgen.war</b>
 
 ## Architecture Details
-See ./docs/CTFLoadGeneratorWebDesign_V01.pdf for high level architecture overview.
+See <b>./docs/CTFLoadGeneratorWebDesign_V01.pdf</b> for high level architecture overview.
