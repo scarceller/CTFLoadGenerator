@@ -32,6 +32,9 @@ import java.util.Map;
 import java.util.Map.Entry;
 */
 
+//import org.springframework.cloud.client.discovery.DiscoveryClient;
+
+
 /**
  * Servlet implementation class FLoadCmdServlet
  */
@@ -41,6 +44,10 @@ public class CmdServlet extends HttpServlet
 	private static final long serialVersionUID = 1L;
 	private Boolean _firstTimeInd = true;
 	private Properties _engineProperties = null;
+
+// inject fabric8 context
+//@Autowire
+//private DiscoveryClient discoveryClient;
 
     /**
      * Default constructor. 
@@ -120,8 +127,14 @@ public class CmdServlet extends HttpServlet
 				break;
 
 				case 'p':	// load properties
-					this.processPropsCmd(request, response);
+                                    this.processPropsCmd(request, response);
 				break;
+
+                                case 't':       // test function, just used for running some testing
+
+                                    this.processTestCmd(request, response);
+                                break;
+
 
 				default:	// action not valid
 					response.getWriter().println("ERROR: '?action=" + action + "' not a valid action!");
@@ -133,6 +146,17 @@ public class CmdServlet extends HttpServlet
 			response.getWriter().println("ERROR: '?action=' not specified!");
 		}
 	}
+
+        // test command, just used for running some basic test. Not part of the main application functionality
+	private void processTestCmd(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
+	{
+            String jspPageName = "Test.jsp";
+
+
+            // Dispatch the JSP
+            RequestDispatcher RequetsDispatcherObj = request.getRequestDispatcher(jspPageName);
+            RequetsDispatcherObj.forward(request, response);
+        }
 
 	// process the manage properties 'action=props'
 	// Valid operations '&oper=s' are:
