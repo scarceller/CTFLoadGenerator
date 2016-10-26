@@ -32,9 +32,6 @@ import java.util.Map;
 import java.util.Map.Entry;
 */
 
-//import org.springframework.cloud.client.discovery.DiscoveryClient;
-
-
 /**
  * Servlet implementation class FLoadCmdServlet
  */
@@ -151,7 +148,6 @@ public class CmdServlet extends HttpServlet
 	private void processTestCmd(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
 	{
             String jspPageName = "Test.jsp";
-
 
             // Dispatch the JSP
             RequestDispatcher RequetsDispatcherObj = request.getRequestDispatcher(jspPageName);
