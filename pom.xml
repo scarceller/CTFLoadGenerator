@@ -7,6 +7,16 @@
   <packaging>war</packaging>
   <name>CTF Load Generator</name>
   <description>CTF Load Generator war</description>
+    
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <version.wildfly-swarm>1.0.0.Alpha5</version.wildfly-swarm>
+    <docker.from>jboss/base-jdk:8</docker.from> 
+    <docker.maven.plugin.version>0.13.5</docker.maven.plugin.version>
+    <docker.assemblyDescriptorRef>artifact</docker.assemblyDescriptorRef>
+    <docker.image>csarceller/ctfloadgen:latest</docker.image>
+  </properties>
+    
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
