@@ -46,4 +46,16 @@
       <scope>provided</scope>
     </dependency>
   </dependencies>
+    
+        <dependency>
+            <groupId>javax</groupId>
+            <artifactId>javaee-web-api</artifactId>
+            <version>7.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.wildfly.swarm</groupId>
+            <artifactId>wildfly-swarm-jaxrs</artifactId>
+            <version>${version.wildfly-swarm}</version>
+        </dependency>
 </project>
