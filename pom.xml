@@ -8,6 +8,7 @@
   <name>CTF Load Generator</name>
   <description>CTF Load Generator war</description>
     
+<!--    
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <version.wildfly-swarm>1.0.0.Alpha5</version.wildfly-swarm>
@@ -16,6 +17,7 @@
     <docker.assemblyDescriptorRef>artifact</docker.assemblyDescriptorRef>
     <docker.image>scarceller/ctfloadgen:latest</docker.image>
   </properties>
+--> 
     
   <build>
     <sourceDirectory>src</sourceDirectory>
@@ -36,6 +38,7 @@
         </configuration>
       </plugin>
         
+<!--        
       <plugin>
         <groupId>org.wildfly.swarm</groupId>
         <artifactId>wildfly-swarm-plugin</artifactId>
@@ -48,6 +51,7 @@
           </execution>
         </executions> 
       </plugin>
+-->     
         
     </plugins>
   </build>
@@ -66,12 +70,15 @@
       <version>7.0</version>
       <scope>provided</scope>
     </dependency>
-    
+
+<!--      
     <dependency>
       <groupId>org.wildfly.swarm</groupId>
       <artifactId>wildfly-swarm-jaxrs</artifactId>
       <version>${version.wildfly-swarm}</version>
     </dependency>
+-->
+      
   </dependencies>    
     
 </project>
