@@ -14,7 +14,7 @@
     <docker.from>jboss/base-jdk:8</docker.from> 
     <docker.maven.plugin.version>0.13.5</docker.maven.plugin.version>
     <docker.assemblyDescriptorRef>artifact</docker.assemblyDescriptorRef>
-    <docker.image>csarceller/ctfloadgen:latest</docker.image>
+    <docker.image>scarceller/ctfloadgen:latest</docker.image>
   </properties>
     
   <build>
@@ -35,6 +35,20 @@
           <target>1.7</target>
         </configuration>
       </plugin>
+        
+      <plugin>
+        <groupId>org.wildfly.swarm</groupId>
+        <artifactId>wildfly-swarm-plugin</artifactId>
+        <version>${version.wildfly-swarm}</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>package</goal>
+            </goals>
+          </execution>
+        </executions> 
+      </plugin>
+        
     </plugins>
   </build>
   
